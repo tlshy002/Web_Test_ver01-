@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html { font-size: 10px;}
+ul, li { list-style: none;}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.board_title { margin-bottom: 30px; }
+.board_title strong { font-size: 3rem; }
+.board_title p {
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+.btn_wrap { 
+    margin-top: 30px; 
+    font-size: 0;
+    text-align: center;
+}
+.btn_wrap a {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+.btn_wrap a:first-child { margin-left: 0;}
+
+.btn_wrap a.on {
+    background-color: #000;
+    color: #fff;
+}
+
+.board_list {
+    width: 100%;
+    border-top: 2px solid #000;
+}
+/* A > B : A안의 B자식들만 모두 선택 */
+.board_list > div {
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+.board_list > div.top {
+    border-bottom: 2px solid #999;    
+}
+.board_list > div:last-child {
+    border-bottom: 1px solid #000;
+}
+/* 각각의 게시글 칸 */
+.board_list > div > div {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 15px 0;
+}
+
+.board_list > div.top > div {
+    font-weight: 600;
+}
+
+/* num클래스이름을 가진 모든 요소들을 선택 */
+.board_list .num {
+    width: 10%;
+}
+.board_list .title {
+    width: 60%;
+    text-align: left;
+}
+.board_list .top .title {
+    text-align: center;
+}
+.board_list .writer {
+    width: 10%;
+}
+.board_list .date {
+    width: 10%;
+}
+.board_list .count {
+    width: 10%;
+}
